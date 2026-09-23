@@ -15,12 +15,12 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
-    private final String[] titles = {"Home", "Courses" ,"Notifications", "Settings" };
+    private final String[] titles = {"Home", "Courses" ,"Notifications", "Profile" };
     private final int[] icons = {
             R.drawable.ic_home,
             R.drawable.ic_book,
             R.drawable.ic_notification,
-            R.drawable.ic_settings
+            R.drawable.ic_profile
     };
 
 
