@@ -35,7 +35,6 @@
             android:layout_weight="1"
             android:layout_marginStart="10dp"
             android:minHeight="40dp"
-            android:background="@drawable/bg_avatar_circle"
             android:gravity="center_vertical"
             android:hint="What's On Your Mind?"
             android:inputType="textCapSentences|textMultiLine"
