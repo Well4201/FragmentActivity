@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="fb_blue">#1877F2</color>
+    <color name="page_bg">#F0F2F5</color>
+    <color name="post_surface">#FFFFFF</color>
+    <color name="text_secondary">#65676B</color>
 </resources>
