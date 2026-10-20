@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ShapeableImageView avatar = view.findViewById(R.id.imgAvatar);
-        EditText etPost = view.findViewById(R.id.etPost);
+        //EditText etPost = view.findViewById(R.id.etPost);
         ImageButton btnAddImage = view.findViewById(R.id.btnAddImage);
 
         btnAddImage.setOnClickListener(v -> {

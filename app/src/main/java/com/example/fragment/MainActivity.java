@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.ic_profile
     };
 
-
+//https://docs.google.com/document/d/17WkeoI2WtWN0osZR8PwDYuGru2-HY3co3YYxvBUvzf0/edit?tab=t.0
     @SuppressLint("MissingSuperCall")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
         new TabLayoutMediator(tabLayout, viewPager,
                 (tab, position) -> {
-            tab.setText(titles[position]);
             tab.setIcon(icons[position]);
         }
         ).attach();

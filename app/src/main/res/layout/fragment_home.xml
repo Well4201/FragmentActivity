@@ -28,7 +28,7 @@
             app:strokeColor="#1A000000"
             app:strokeWidth="1dp" />
 
-        <EditText
+        <!--<EditText
             android:id="@+id/etPost"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -45,24 +45,30 @@
             android:paddingBottom="8dp"
             android:textSize="15sp"
             android:textColorHint="@color/text_secondary"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no" /> -->
+
+        <TextView
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Hello,
+            \nAnthony"></TextView>
 
         <ImageButton
             android:id="@+id/btnAddImage"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="6dp"
-            android:padding="8dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_image"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="add image"
-            app:tint="@color/text_secondary" />
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_bell"
+            app:tint="@color/text_secondary"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
+
+
+
 
 </FrameLayout>
