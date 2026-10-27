@@ -21,7 +21,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
         } else if(position == 2){
             return new NotificationsFragment();
         }else if(position == 3){
-            return new SettingsFragment();
+            return new ProfileFragment();
         }
             return new HomeFragment();
         }

@@ -1,5 +1,29 @@
 <resources>
     <string name="app_name">Fragment</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="profile_avatar_initials">WF</string>
+    <string name="profile_name">Wesley Faisan</string>
+    <string name="profile_handle">\@alexcodes</string>
+    <string name="profile_bio">I love osu.</string>
+    <string name="profile_location">NIR, Philippines</string>
+    <string name="profile_posts_count">0</string>
+    <string name="profile_posts">Posts</string>
+    <string name="profile_followers_count">6</string>
+    <string name="profile_followers">Followers</string>
+    <string name="profile_following_count">727</string>
+    <string name="profile_following">Following</string>
+    <string name="profile_edit_button">Edit profile</string>
+    <string name="profile_share_button">Share</string>
+    <string name="profile_account">Account</string>
+    <string name="profile_saved_posts">Saved posts</string>
+    <string name="profile_settings_privacy">Settings and privacy</string>
+    <string name="profile_logout">Log out</string>
+
+
+    <string name="desc_location_pin">Location pin</string>
+    <string name="desc_saved_posts_icon">Saved posts icon</string>
+    <string name="desc_settings_icon">Settings icon</string>
+    <string name="desc_logout_icon">Log out icon</string>
+    <string name="desc_chevron">Chevron</string>
 </resources>
