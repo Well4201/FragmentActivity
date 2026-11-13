@@ -1,7 +1,5 @@
 package com.example.fragment;
 
-import android.annotation.SuppressLint;
-import android.graphics.drawable.Icon;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -16,34 +14,30 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
-    private final String[] titles = {"Home", "Courses" ,"Notifications", "Profile" };
+    private final String[] titles = {"Disposal", "Rider Jobs", "Eco-Market", "Profile"};
     private final int[] icons = {
-            R.drawable.ic_home,
-            R.drawable.ic_book,
-            R.drawable.ic_notification,
+            R.drawable.ic_trash_bin,
+            R.drawable.ic_truck_rider,
+            R.drawable.ic_wallet_market,
             R.drawable.ic_profile
     };
 
-//https://docs.google.com/document/d/17WkeoI2WtWN0osZR8PwDYuGru2-HY3co3YYxvBUvzf0/edit?tab=t.0
-    @SuppressLint("MissingSuperCall")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setOnMenuItemClickListener(item -> {
-            return item.getItemId() == R.id.action_search;
-        });
+        toolbar.setTitle("Basura Automatic");
+        toolbar.setSubtitle("Localized Waste Micro-Management");
+        toolbar.setOnMenuItemClickListener(item -> item.getItemId() == R.id.action_search);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-       // setSupportActionBar(findViewById(R.id.toolbar));
-        setContentView(R.layout.activity_main);
-
 
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         ViewPager2 viewPager = findViewById(R.id.viewPager);
@@ -52,8 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
         new TabLayoutMediator(tabLayout, viewPager,
                 (tab, position) -> {
-            tab.setIcon(icons[position]);
-        }
+                    tab.setText(titles[position]);
+                    tab.setIcon(icons[position]);
+                }
         ).attach();
     }
 }

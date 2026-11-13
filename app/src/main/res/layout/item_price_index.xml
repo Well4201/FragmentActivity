@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="12dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMaterialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111827"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="PET Plastic Bottles" />
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            tools:text="Nareresiklo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPricePerKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2563EB"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="₱15.00 / kg" />
+
+        <TextView
+            android:id="@+id/tvPointsPerKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#10B981"
+            android:textSize="12sp"
+            tools:text="15 Pts / kg" />
+    </LinearLayout>
+</LinearLayout>

@@ -7,7 +7,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
 
-
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
@@ -15,16 +14,15 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-
         if (position == 1) {
-            return new CoursesFragment();
-        } else if(position == 2){
-            return new NotificationsFragment();
-        }else if(position == 3){
+            return new RiderJobsFragment();
+        } else if (position == 2) {
+            return new EcoMarketFragment();
+        } else if (position == 3) {
             return new ProfileFragment();
         }
-            return new HomeFragment();
-        }
+        return new DisposalFragment();
+    }
 
     @Override
     public int getItemCount() {
